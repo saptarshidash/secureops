@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:context=".ui.attendance.AttendanceDashboardFragment"
+  android:background="@color/app_theme_color">
+
+
+  <LinearLayout
+    android:id="@+id/textRow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHeight_percent=".14"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="5"
+      android:orientation="vertical">
+
+      <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/cardMakeAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="12dp"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_mark_attendance" />
+
+          <TextView
+            android:id="@+id/txtViewTotalEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="-5dp"
+            android:text="Mark Todays Attendance"
+            android:textAlignment="center"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:lineSpacingExtra="-5dp"
+            android:text="Mark your in out time"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+      </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="5"
+      android:layout_marginLeft="5dp"
+      android:orientation="vertical">
+
+      <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/cardViewAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="12sp"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_attendance" />
+
+          <TextView
+            android:id="@+id/txtViewReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="-5dp"
+            android:text="Attendance Report"
+            android:textAlignment="center"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:lineSpacingExtra="-5dp"
+            android:text="Check your previous reports"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+      </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
